@@ -71,7 +71,7 @@ def main():
 
         # Perbandingan Saham
         st.subheader('Perbandingan Saham')
-        tickers = st.text_input('Masukkan Ticker Saham untuk Perbandingan (pisahkan dengan koma)', 'GOOGL, MSFT')
+        tickers = st.text_input('Masukkan Ticker Saham untuk Perbandingan (pisahkan dengan koma)', 'BBNI.JK, BBRI.JK')
         tickers_list = [ticker.strip() for ticker in tickers.split(',')]
         comparison_data = pd.DataFrame()
         for t in tickers_list:
